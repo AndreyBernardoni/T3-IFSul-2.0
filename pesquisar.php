@@ -6,10 +6,10 @@
 </head>
 
 <body>
-    <h1> Pesquisar cliente</h1>
+    <h1> Pesquisar compromisso</h1>
     <form action="pesquisa.php" method="post">
-        Nome:<br/>
-        <input type="text" name="nome"><br/><br/>
+        Local:<br/>
+        <input type="text" name="local"><br/><br/>
         <input type="submit" value="Pesquisar">
     </form>
 </body>

@@ -23,11 +23,9 @@
     <div>
         <a href="cadastrar.php"> <button>Cadastrar compromissos</button></a>
         <br>
-        <a href="pesquisar.html"> <button>Pesquisar cliente</button></a>
+        <a href="pesquisar.php"> <button>Pesquisar compromissos</button></a>
         <br>
-        <a href="alterar.html"> <button>Alterar cliente</button></a>
-        <br>
-        <a href="remover.html"> <button>Remover cliente</button></a>
+        <a href="alterar.php"> <button>Alterar compromissos</button></a>
     </div>
 </body>
 
