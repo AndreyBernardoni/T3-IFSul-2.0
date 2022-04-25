@@ -16,6 +16,7 @@
 
               //recebe o nome do formulário
                 $pesquisa   = $_POST["local"];
+                $id="";
                 $local="";
                 $descricao="";
                 $hora="";
@@ -32,23 +33,24 @@
                 //acessa os dados pesquisados
                 while ($dados=mysqli_fetch_array($consulta))
                 {
-                  $nome=$dados["Nome"];
-                  $email=$dados["Email"];
-                  $cidade=$dados["Cidade"];
-                  $uf=$dados["UF"];
+                  $id=$dados["id"];
+                  $nome=$dados["data"];
+                  $email=$dados["local"];
+                  $cidade=$dados["hora"];
+                  $uf=$dados["descricao"];
                 }
                 ?>
                   <form action="altera.php" method="POST">
 
                     <input type="hidden" name="id"  value="<?php echo $id; ?>" ><br/><br/>
-                     Nome:<br/>
-  	                 <input type="text" name="nome"  value="<?php echo $nome; ?>"><br/><br/>
-  	                 E-mail:<br/>
-  	                 <input type="email" name="email"  value="<?php echo $email; ?>"><br/><br/>
-  	                 Cidade:<br/>
-  	                 <input type="text" name="cidade"  value="<?php echo $cidade; ?>"><br/><br/>
-  	                 UF:<br/>
-  	                 <input type="text" name="uf" size="2" value="<?php echo $uf; ?>">
+                     Local:<br/>
+  	                 <input type="text" name="nome"  value="<?php echo $local; ?>"><br/><br/>
+  	                 Descrição:<br/>
+  	                 <input type="email" name="email"  value="<?php echo $descricao; ?>"><br/><br/>
+  	                 Hora:<br/>
+  	                 <input type="text" name="cidade"  value="<?php echo $cihoradade; ?>"><br/><br/>
+  	                 Data:<br/>
+  	                 <input type="text" name="uf" size="2" value="<?php echo $data; ?>">
   	                 <br/><br/>
   	                 <input type="submit" value="Alterar">
                   </form>
