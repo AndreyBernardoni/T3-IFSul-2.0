@@ -5,9 +5,9 @@
   </head>
   <body>
      <h1> Alterar compromisso</h1>
-	   <form action="pesquisaAltera.php" method="post">
-	      Local:<br/>
-	      <input type="text" name="local"><br/><br/>
+	   <form action="pesqAltera.php" method="post">
+	      Id:<br/>
+	      <input type="text" name="id"><br/><br/>
 	      <input type="submit" value="Alterar">
 	   </form>
   </body>
